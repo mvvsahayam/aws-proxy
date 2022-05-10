@@ -1,4 +1,4 @@
-package io.github.mvvs.proxy;
+package httpproxy;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

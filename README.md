@@ -15,7 +15,7 @@ Steps:
    - Concatenate servercert.pem and cacert.pem to aws-proxy.pem. This is useful for using in curl
      - cat servercert.pem cacert.pem > aws-proxy.pem
 2) mvn clean install
-3) java -jar target/aws-proxy-1.0-SNAPSHOT-shaded.jar 
+3) java -jar target/httpproxy-1.0-SNAPSHOT-shaded.jar 
 4) curl https://wttr.in?Herndon?0 --proxy localhost:9090 --cacert cert/aws-proxy.pem
 
 

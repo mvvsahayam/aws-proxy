@@ -1,4 +1,4 @@
-package io.github.mvvs.proxy;
+package httpproxy;
 
 import io.netty.handler.codec.http.HttpRequest;
 import org.apache.log4j.xml.DOMConfigurator;
