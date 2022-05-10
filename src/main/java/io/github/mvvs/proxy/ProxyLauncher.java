@@ -43,7 +43,7 @@ public class ProxyLauncher {
             List<String> whitelistedAccounts = Arrays.asList(prop.getProperty("whitelisted_accounts").split("\\s*,\\s*"));
             BlockingHttpsFilterSource blockingHttpsFilterSource = new BlockingHttpsFilterSource(whitelistedAccounts);
 
-            Authority authority = new Authority(new File("."),
+            Authority authority = new Authority(new File(prop.getProperty("keystore_dir")),
                     prop.getProperty("alias"),
                     prop.getProperty("password").toCharArray(),
                     prop.getProperty("common_name"),

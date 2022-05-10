@@ -26,3 +26,6 @@ hs_err_pid*
 #certificates
 *.p12
 *.pem
+*.csr
+cert/serial*
+cert/index*
